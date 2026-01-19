@@ -1,4 +1,4 @@
-# Netflix Movies and TV Shows: Data Analysis using SQL
+# Netflix Movies and TV Shows: Data Analysis Using SQL
 
 ![Netflix Logo](https://github.com/shivanidesai30/netflix_sql_project/blob/main/Logonetflix.png)
 
@@ -43,3 +43,7 @@ CREATE TABLE netflix
     listed_in    VARCHAR(100),
     description  VARCHAR(250)
 );
+
+SELECT type, COUNT(*) AS total_content
+FROM netflix
+GROUP BY type;
